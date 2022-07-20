@@ -22,11 +22,12 @@ import lombok.val;
 import net.bytebuddy.asm.Advice;
 import net.bytebuddy.implementation.Implementation;
 import net.bytebuddy.implementation.bytecode.StackManipulation;
-import net.bytebuddy.jar.asm.Label;
-import net.bytebuddy.jar.asm.MethodVisitor;
-import net.bytebuddy.jar.asm.Opcodes;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Opcodes;
 
-import static net.bytebuddy.jar.asm.Opcodes.*;
+import static org.objectweb.asm.Opcodes.GOTO;
+import static org.objectweb.asm.Opcodes.INVOKESTATIC;
 
 @Value
 @EqualsAndHashCode(callSuper = false)

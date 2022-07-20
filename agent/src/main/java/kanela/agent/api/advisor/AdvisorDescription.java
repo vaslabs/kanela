@@ -42,7 +42,7 @@ public class AdvisorDescription {
     }
 
     public AgentBuilder.Transformer makeTransformer(ModuleConfiguration configuration) {
-        val name = Option.of(advisorClassName).getOrElse(() -> advisorClass.getName());
+        val name = Option.of(advisorClassName).getOrElse(advisorClass::getName);
         val exceptionHandler = getExceptionHandler(configuration.getExceptionHandlerStrategy());
 
         return new AgentBuilder.Transformer.ForAdvice()

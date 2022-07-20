@@ -19,11 +19,11 @@ package kanela.agent.api.instrumentation.bridge;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 import lombok.val;
-import net.bytebuddy.jar.asm.ClassVisitor;
-import net.bytebuddy.jar.asm.Opcodes;
-import net.bytebuddy.jar.asm.Type;
-import net.bytebuddy.jar.asm.commons.Method;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.Type;
 import net.bytebuddy.utility.OpenedClassReader;
+import org.objectweb.asm.commons.Method;
 
 import java.lang.annotation.Annotation;
 

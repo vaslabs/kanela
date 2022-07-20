@@ -25,7 +25,7 @@ import net.bytebuddy.description.field.FieldList;
 import net.bytebuddy.description.method.MethodList;
 import net.bytebuddy.description.type.TypeDescription;
 import net.bytebuddy.implementation.Implementation;
-import net.bytebuddy.jar.asm.ClassVisitor;
+import org.objectweb.asm.ClassVisitor;
 import net.bytebuddy.pool.TypePool;
 
 @Value

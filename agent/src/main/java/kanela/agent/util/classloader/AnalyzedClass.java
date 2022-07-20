@@ -25,10 +25,10 @@ import kanela.agent.api.instrumentation.classloader.ClassRefiner;
 import kanela.agent.util.log.Logger;
 import lombok.Value;
 import lombok.val;
-import net.bytebuddy.jar.asm.ClassReader;
-import net.bytebuddy.jar.asm.Opcodes;
-import net.bytebuddy.jar.asm.Type;
-import net.bytebuddy.jar.asm.tree.ClassNode;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.Opcodes;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.tree.ClassNode;
 import net.bytebuddy.utility.OpenedClassReader;
 
 import java.io.IOException;

@@ -16,12 +16,11 @@
 
 package kanela.agent.api.instrumentation.mixin;
 
-import net.bytebuddy.jar.asm.MethodVisitor;
-import net.bytebuddy.jar.asm.Opcodes;
-import net.bytebuddy.jar.asm.Type;
-import net.bytebuddy.jar.asm.commons.AdviceAdapter;
-import net.bytebuddy.jar.asm.commons.Method;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Type;
 import net.bytebuddy.utility.OpenedClassReader;
+import org.objectweb.asm.commons.AdviceAdapter;
+import org.objectweb.asm.commons.Method;
 
 public class MixinInitializer extends AdviceAdapter {
     private static final String ConstructorDescriptor = "<init>";

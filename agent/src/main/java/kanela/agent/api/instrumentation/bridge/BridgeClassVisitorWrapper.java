@@ -25,9 +25,9 @@ import net.bytebuddy.description.field.FieldList;
 import net.bytebuddy.description.method.MethodList;
 import net.bytebuddy.description.type.TypeDescription;
 import net.bytebuddy.implementation.Implementation;
-import net.bytebuddy.jar.asm.ClassReader;
-import net.bytebuddy.jar.asm.ClassVisitor;
+import org.objectweb.asm.ClassReader;
 import net.bytebuddy.pool.TypePool;
+import org.objectweb.asm.ClassVisitor;
 
 @Value(staticConstructor = "of")
 @EqualsAndHashCode(callSuper = false)

@@ -22,15 +22,16 @@ import kanela.agent.util.classloader.InstrumentationClassPath;
 import lombok.EqualsAndHashCode;
 import lombok.Value;
 import lombok.val;
-import net.bytebuddy.jar.asm.ClassReader;
-import net.bytebuddy.jar.asm.ClassVisitor;
-import net.bytebuddy.jar.asm.MethodVisitor;
-import net.bytebuddy.jar.asm.Type;
-import net.bytebuddy.jar.asm.commons.MethodRemapper;
-import net.bytebuddy.jar.asm.commons.SimpleRemapper;
-import net.bytebuddy.jar.asm.tree.ClassNode;
-import net.bytebuddy.jar.asm.tree.MethodNode;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassVisitor;
+import org.objectweb.asm.MethodVisitor;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.commons.MethodRemapper;
+import org.objectweb.asm.commons.SimpleRemapper;
+
 import net.bytebuddy.utility.OpenedClassReader;
+import org.objectweb.asm.tree.ClassNode;
+import org.objectweb.asm.tree.MethodNode;
 
 import java.util.function.Predicate;
 
