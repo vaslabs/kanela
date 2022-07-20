@@ -20,7 +20,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Value;
 import lombok.val;
 import net.bytebuddy.ClassFileVersion;
-import net.bytebuddy.jar.asm.ClassVisitor;
+import org.objectweb.asm.ClassVisitor;
 import net.bytebuddy.utility.OpenedClassReader;
 
 import static net.bytebuddy.ClassFileVersion.JAVA_V5;
